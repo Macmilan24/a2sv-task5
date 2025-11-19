@@ -1,4 +1,4 @@
-/* Container Styling */
+
 .contact-form-container {
   max-width: 500px;
   margin: 2rem auto;
@@ -15,7 +15,6 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-/* Form Groups */
 .form-group {
   margin-bottom: 1.2rem;
   display: flex;
@@ -45,7 +44,6 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
 }
 
-/* Error Styling */
 .input-error {
   border-color: #dc3545 !important;
 }
@@ -56,7 +54,6 @@ textarea:focus {
   margin-top: 0.25rem;
 }
 
-/* Button Styling */
 .submit-btn {
   width: 100%;
   padding: 12px;
@@ -79,7 +76,6 @@ textarea:focus {
   cursor: not-allowed;
 }
 
-/* Success Message */
 .success-message {
   background-color: #d4edda;
   color: #155724;
@@ -90,7 +86,7 @@ textarea:focus {
   border: 1px solid #c3e6cb;
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
   .contact-form-container {
     padding: 1rem;

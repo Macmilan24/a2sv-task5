@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactForm from './components/ContactForm';
-import './App.css'; // Assuming global basic reset styles
+import './App.css'; 
 
 const App: React.FC = () => {
   return (

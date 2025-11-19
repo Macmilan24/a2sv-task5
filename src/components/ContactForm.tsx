@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import './ContactForm.css';
 
-// Define the interface for our form data
 interface IContactFormInputs {
   name: string;
   email: string;
@@ -10,7 +9,7 @@ interface IContactFormInputs {
 }
 
 const ContactForm: React.FC = () => {
-  // Initialize useForm hook
+
   const {
     register,
     handleSubmit,
@@ -20,17 +19,15 @@ const ContactForm: React.FC = () => {
 
   const [submitSuccess, setSubmitSuccess] = useState<boolean>(false);
 
-  // Function to handle form submission
+
   const onSubmit: SubmitHandler<IContactFormInputs> = async (data) => {
     console.log('Form Data Submitted:', data);
     
-    // Simulate an API call with a timeout
+ 
     await new Promise((resolve) => setTimeout(resolve, 1000));
     
     setSubmitSuccess(true);
-    reset(); // Clear form fields after success
-
-    // Remove success message after 3 seconds
+    reset(); 
     setTimeout(() => setSubmitSuccess(false), 3000);
   };
 
